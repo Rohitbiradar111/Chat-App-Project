@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.chat-scrollbar {
+  scrollbar-width: thin;
+}
+
+.chat-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.input-scrollbar {
+  scrollbar-width: thin;
+}
+
+.input-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
