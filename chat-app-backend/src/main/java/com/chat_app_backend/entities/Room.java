@@ -6,7 +6,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
+import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,9 +16,13 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Document(collection = "rooms")
-public class Room {
+public class Room implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     private String id;
     private String roomId;
     private List<Message> messages = new ArrayList<>();
+    private LocalDateTime createdAt = LocalDateTime.now();
+    private LocalDateTime lastActivityAt = LocalDateTime.now();
 }
