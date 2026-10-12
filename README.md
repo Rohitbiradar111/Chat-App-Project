@@ -1,7 +1,7 @@
 <div align="center">
   <div>
     <a href="https://boltchat1.netlify.app" target="_blank">
-      <img src="https://github.com/user-attachments/assets/26df18d2-7619-407c-a85d-8eb1550e4453" alt="Project Image">
+      <img src="https://github.com/user-attachments/assets/21bbd807-94c1-4f01-bd4e-94d88d72c216" alt="Project Image">
     </a>
   </div>
   <h1 align="center">BoltChat - Chat App</h1>
