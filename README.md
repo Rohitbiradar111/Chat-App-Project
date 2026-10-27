@@ -18,27 +18,37 @@
 
 ## <a name="overview">💡 Overview</a>
 
-BoltChat is a real-time messaging platform built with React, Spring Boot, and MongoDB.
+BoltChat is a fast, simple real-time chat app with built-in AI summarization, powered by React, Spring Boot, and MongoDB.
 
 ## <a name="tech-stack">👩‍💻 Tech Stack</a>
 
 - React
 - Spring Boot
 - MongoDB
+- Redis
 - Tailwind CSS
 - WebSocket
+- Google Gemini AI
 
 ## <a name="features">✨ Features</a>
 
 - Enables real-time, bi-directional communication using WebSockets and the STOMP protocol.
 
-- Allows users to create and enter specific channels for organized group discussions.
+- Integrates Google Gemini to summarize room conversations into key topics, decisions, and action items with one click.
   
-- Manages active user sessions and message broadcasting through a dedicated message broker.
+- Allows users to create and enter specific channels for organized group discussions with zero sign-up required.
+  
+- Caches active room data for instant lookups, with an automatic fallback to MongoDB if Redis is offline.
   
 - Utilizes MongoDB to handle high-frequency message storage and flexible document schemas.
   
-- Features a live-updating dashboard that reflects new messages instantly without a page reload.
+- Features a responsive, auto-scrolling dashboard that displays new messages instantly without a page reload.
+
+- Runs scheduled background jobs (@Scheduled) to automatically delete empty rooms and clean up old messages.
+
+- Configured with Spring Profiles (dev / prod), centralized Global Exception Handling (@RestControllerAdvice), and structured SLF4J logging.
+
+- Backed by comprehensive unit tests using JUnit 5 and Mockito covering controllers, services, and error handling.
 
 ## <a name="documentation">📖 Documentation</a>
 
@@ -51,6 +61,10 @@ BoltChat is a real-time messaging platform built with React, Spring Boot, and Mo
 [WebSocket & STOMP](https://spring.io/guides/gs/messaging-stomp-websocket/)
 
 [Tailwind CSS](https://tailwindcss.com/docs)
+
+[Redis](https://redis.io/)
+
+[Google Gemini AI](https://ai.google.dev/)
 
 ## <a name="contribute">📫 Contribute</a>
 
