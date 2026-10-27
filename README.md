@@ -29,6 +29,7 @@ BoltChat is a fast, simple real-time chat app with built-in AI summarization, po
 - Tailwind CSS
 - WebSocket
 - Google Gemini AI
+- Docker
 
 ## <a name="features">✨ Features</a>
 
@@ -50,6 +51,8 @@ BoltChat is a fast, simple real-time chat app with built-in AI summarization, po
 
 - Backed by comprehensive unit tests using JUnit 5 and Mockito covering controllers, services, and error handling.
 
+- Containerized backend using a multi-stage Docker build for lightweight and reliable cloud deployment.
+
 ## <a name="documentation">📖 Documentation</a>
 
 [React](https://react.dev/)
@@ -65,6 +68,8 @@ BoltChat is a fast, simple real-time chat app with built-in AI summarization, po
 [Redis](https://redis.io/)
 
 [Google Gemini AI](https://ai.google.dev/)
+
+[Docker](https://docs.docker.com/)
 
 ## <a name="contribute">📫 Contribute</a>
 
